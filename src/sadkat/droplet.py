@@ -21,8 +21,8 @@ class UniformDroplet:
     mass_solute: float              # kg
     mass_solvent: float             # kg
     temperature: float              # K
-    velocity: np.array=np.zeros(3)  # m/s
-    position: np.array=np.zeros(3)  # m
+    velocity: np.array = field(default_factory=lambda: np.zeros(3))  # m/s
+    position: np.array = field(default_factory=lambda: np.zeros(3))  # m
 
     @staticmethod
     def from_mfs(solution, environment, gravity,

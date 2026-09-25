@@ -19,7 +19,7 @@ class Environment:
     specific_heat_capacity: float   # J/kg/K
     thermal_conductivity: float     # J/s/m/K
     dynamic_viscosity: float        # kg/m/s
-    velocity: np.array=np.zeros(3)  # m/s
+    velocity: np.array = field(default_factory=lambda: np.zeros(3))  # m/s
 
     @property
     def density(self):
