@@ -888,7 +888,7 @@ if __name__ == '__main__':
                    sadkat_experiment_data = sadkat_experimental_evaporation_rates,
                    delta_T_data = sadkat_2d_delta_T)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #sample data available from https://doi.org/10.5281/zenodo.6396580
 
     #sample_2d_data = np.load('src/sadkat/sample_2d_data.npy',allow_pickle = True)
